@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class WrapperClassExample {
+	
+	public static int calculatesum(int i,int j) {
+		return i+j;
+	}
+
+	public static void main(String[] args) {
+		// automatic conversion from wrapper class to primitive ("Unboxing")
+//		and primitive to wrapper class ("Autoboxing")
+		
+		Integer i=10;// Integer is a class java.lang which automatically gets loaded // AUTOBOXING
+		Integer j=20;
+		ArrayList<Integer> list=new ArrayList<>();
+		list.add(i);//Autoboxing
+		
+		int sum=calculatesum(i,j);//Unboxing	
+
+	}
+
+}
